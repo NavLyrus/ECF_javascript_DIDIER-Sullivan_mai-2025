@@ -10,7 +10,7 @@ fetch("assets/data/recette.json")
     const modalContent = document.getElementById("modalContent");
     const closeModal = document.getElementById("closeModal");
 
-    const recettes = recette.recipes; // tableau des recettes
+    const recettes = recette.recipes; 
 
    function ShowRecipes(recettesFiltrees) {
   grid.innerHTML = "";
@@ -85,7 +85,7 @@ fetch("assets/data/recette.json")
       ShowRecipes(filtres);
     });
 
-    // Affiche tout au chargement
+    
     ShowRecipes(recettes);
   })
   .catch((err) => {
